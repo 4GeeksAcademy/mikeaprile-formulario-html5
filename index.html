@@ -12,7 +12,7 @@
     <title>Formulario HTML5</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container mt-5b">
       <div class="card">
       <div class="card-header"><h2>Payment form example</h2>
       </div>
@@ -62,7 +62,21 @@
         <label for="validationDefault05" class="form-label">Zip Code</label>
         <input type="text" class="form-control" id="validationDefault05" required>
       </div>
-      
+      <div class="col-md-6">
+        <label for="nacimiento"class="form-label">Date of birth<small></small></label>
+        <input type="date" id="nacimiento"  name="nacimiento"  class="form-control">
+    </div>
+      <div class="col-md-6">
+        <label for="banner" class="form-label">File</label>
+        <div class="input-group">
+            <label class="input-group-btn">
+          <span class="btn btn-secondary btn-file">
+                     <input accept=".jpg,.png,.jpeg,.gif" class="hidden" name="banner" type="file" id="banner">
+                </span>
+            </label>
+            <input class="form-control" id="banner_captura" readonly="readonly" name="banner_captura" type="text" value="">
+        </div>
+    </div>
       <div class="col-md-6">
         <div>We accept:</div>
         <div class="form-check form-check-inline">
